@@ -4,7 +4,7 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 24; //insira o valor da final variável 'estudo' aqui
 var estudo = 10;
 const multiplicador = 2;
 
@@ -15,7 +15,7 @@ const multiplicador = 2;
     {
       estudo = 7;
       {
-        var estudo = 24;
+        var estudo = 24; //Var definiitions adjust variables globally
       }
     }
   }

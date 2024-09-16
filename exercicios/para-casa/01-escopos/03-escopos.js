@@ -4,7 +4,7 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 6; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
@@ -19,7 +19,7 @@ const multiplicador = 2;
 
   estudo += 2;
 
-  estudo /= 2;
+  estudo /= 2; // The entire math operation segment is inside brackets, so the following line will define the value outside of it
 }
 
 estudo = 6;

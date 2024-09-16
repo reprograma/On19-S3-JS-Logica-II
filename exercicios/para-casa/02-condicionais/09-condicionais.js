@@ -10,11 +10,17 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
+//This one just needs a variable to track the average of the results and conditions based on the value
 readline.question('\nVamos ver se vc passou! Qual a primeira nota?\n', nota1 => {
   readline.question('\nQual a segunda nota?\n', nota2 => {
-
-    console.log(nota1, nota2);
-
+  const mean = (+nota1 + +nota2) / 2;
+    if (mean >= 6) {
+    console.log(`Congratulations! You have been approved.`);
+  } else if (mean >= 5) {
+    console.log(`Almost! You should try your best on the exam.`);
+  } else { 
+    console.log(`Oh bummer! You didn't manage this time, try again next year.`)
+  }
     readline.close();
   });
 });

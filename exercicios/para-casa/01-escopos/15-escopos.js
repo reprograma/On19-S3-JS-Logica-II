@@ -4,7 +4,7 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = "Acabou!"; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
@@ -17,7 +17,7 @@ estudo = estudo * estudo / estudo + estudo + estudo + estudo * estudo - estudo /
   {
 
   }
-  estudo = "Acabou!";
+  estudo = "Acabou!"; //After all the arithmetic operations and empty brackets, variable gets defined and remains as this string 
 }
 
 if (estudo === resposta) {

@@ -4,14 +4,14 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 10; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
 {
   const estudo = 15;
   {
-    let estudo = 11;
+    let estudo = 11; //The following lines had no impact on the global value of the variable, because a new one was defined here at the start
     estudo = 9;
     {
       estudo = "Olá!";

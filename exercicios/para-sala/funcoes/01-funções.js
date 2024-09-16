@@ -1,22 +1,20 @@
 console.clear();
 
-// Deve comemorar caso o usuário acerte o número 7
-const advinhaChute = (chute) => {
-  if (+chute === 7) {
-    console.log("Eba! Você acertou");
-  } else {
-    console.log("Tente de novo");
-  }
-}
-
 const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  readline.question('\nChuta um número de um a dez!\n', (chute) => {
+    adivinha(chute);
+    readline.close();
+  });
 
-readline
-  .question('\nChuta um número de um a dez!\n',
-    (chute) => {
-      advinhaChute(chute);
-      readline.close();
-    });
+  const adivinha = (chute) => {
+    if (+chute ===7) { //can also be used just ==7 to compare the input number as string 
+      console.log("Parabéns! Você acertou");
+    } else { 
+      console.log("Tente novamente");   
+    }
+    console.log("Você chutou: ", chute)
+   }

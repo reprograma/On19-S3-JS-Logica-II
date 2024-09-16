@@ -4,7 +4,7 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 3; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
@@ -18,9 +18,9 @@ const multiplicador = 2;
 }
 
 {
-  estudo = 3;
+  estudo = 3; //Line where the value of the variable was redefined globally
   {
-    let estudo = "Olá!";
+    let estudo = "Olá!"; //This line just define the variable inside the bracket, never reading/recallig/redefining
   }
 }
 

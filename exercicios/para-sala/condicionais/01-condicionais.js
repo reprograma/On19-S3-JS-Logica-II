@@ -1,15 +1,14 @@
-console.clear();
-// Maiores de idade pagam inteira
-// Menores de idade pagam meia
+// Maior de 18 = inteira
+// Menores = meia entrada
 
-const idade = 18;
+console.clear ();
+const idade = 16;
 
-// == ou === comparar se é igual
-// > < <= >=
 if (idade >= 18) {
-  console.log("Pagar entrada inteira");
+    console.log("Pagar entrada inteira");
 } else {
-  console.log("Pagar meia entrada");
+  console.log("Pagar meia");
 }
 
 console.log("Final");
+

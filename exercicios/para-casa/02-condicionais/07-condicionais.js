@@ -11,9 +11,11 @@ const readline = require('readline').createInterface({
 
 readline.question('\nQuando anos você tem?\n', idade => {
   readline.question('\nVocê é estudante? (Sim, Não)\n', estudante => {
-
-    console.log(idade, estudante);
-
+   if (+idade <= 18 || estudante == "Sim") { //Created conditions for paying half-price 
+    console.log(`Nice, you have the righ to pay half price.`);
+   } else {
+    console.log(`Sorry, you need to pay full price.`);
+  }
     readline.close();
   });
 });

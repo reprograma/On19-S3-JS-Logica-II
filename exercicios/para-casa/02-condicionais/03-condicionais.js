@@ -6,12 +6,12 @@
 console.clear(); //Irá limpar o terminal para você
 
 let valorEntrada = 10;
-let valorMeiaEntrada;
+let valorMeiaEntrada; //Instead of OR, the condition has to be set to AND, as person needs to be adult AND student to pay half the price
 
 //Pessoa 1: é adulto, mas estudante, dê meia entrada
 let adulto = true;
 let estudante = true;
-const condicional = () => estudante || adulto; // <=== mexa apenas aqui
+const condicional = () => estudante && adulto; // <=== mexa apenas aqui
 if (condicional()) {
   valorMeiaEntrada = valorEntrada / 2;
 } else {
@@ -34,9 +34,9 @@ if (condicional()) {
 }
 
 if (valorMeiaEntrada === 10) {
-  console.log("\n%Você acertou!\n", "color: green");
+  console.log("\nVocê acertou!\n", "color: green");
 } else {
-  console.log("%cTente de novo!", "color: #000");
+  console.log("\nTente de novo!\n", "color: #000");
 }
 
 /*

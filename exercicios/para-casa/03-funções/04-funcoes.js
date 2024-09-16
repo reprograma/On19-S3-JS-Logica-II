@@ -12,4 +12,4 @@ const calcularMedia = (numero1, numero2) => { // É obrigatório usar essa funç
   console.log(numero1, numero2);
 }
 
-calcularMedia(myArgs1, myArgs2);
+calcularMedia(myArgs1, myArgs2); //This exercise is the same as the first 

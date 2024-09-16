@@ -1,25 +1,23 @@
-console.clear();
-// Maiores de idade pagam inteira
-// pessoas acima ou com 65 anos deve pagar meia;
-// pessoa com 18 paga 75% da entrada
-// Menores de idade pagam meia
-// Se tiver cupom, ganha pipoca
+// Maior de 18 = inteira
+// Menores de 18 ou maiores de 65 = meia entrada
+// Com cupom, ganha pipoca
 
-const idade = 35;
+console.clear ();
+const idade = 77;
 const temCupom = true;
+/* You can combine conditions in a new variable, like
+const idadeInteira = idade > 18 && idade < 65 */
 
-// == ou === comparar se é igual
-// > < <= >=
 if (idade > 18 && idade < 65) {
-  console.log("Pagar entrada inteira");
+    console.log("Pagar entrada inteira");
 } else if (idade === 18) {
-  console.log("Pagar 3/4 entrada");
+    console.log("Pagar 7/8 entrada");
 } else {
-  console.log("Pagar meia entrada");
+  console.log("Pagar meia");
 }
 
 if (temCupom) {
-  console.log("Ganhou Pipoca");
+    console.log("Ganhou pipoca");
 }
 
 console.log("Final");

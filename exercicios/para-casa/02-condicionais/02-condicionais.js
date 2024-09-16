@@ -11,8 +11,8 @@ let adulto = false;
 let valorEntrada = 10;
 let valorMeiaEntrada;
 
-if (adulto) { // mexa apenas aqui
-  valorMeiaEntrada = valorEntrada / 2;
+if (adulto = true) { // mexa apenas aqui
+  valorMeiaEntrada = valorEntrada / 2; //Adult variable needs to be true to start condition
 }
 
 if (valorMeiaEntrada === 5) {

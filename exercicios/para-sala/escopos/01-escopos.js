@@ -1,23 +1,7 @@
-console.clear();
+console.clear()
 
-let nome = "Giu";
-
-{
-  nome = "Gabriela";
-  {
-    let nome = "João";
-    console.log("1", nome)
-  }
+{let teste = 13;
 }
 
-let saudacao;
+console.log("Hello, world")
 
-if (true) {
-  if (false) {
-    saudacao = "Que lindo dia"
-  } else {
-    saudacao = "que chato"
-  }
-}
-
-console.log("final", saudacao);
