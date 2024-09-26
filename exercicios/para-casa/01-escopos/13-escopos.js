@@ -4,8 +4,8 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
-let estudo;
+const resposta = undefined; //insira o valor da final variável 'estudo' aqui
+let estudo; //aqui foi feita a atribuição no escopo global --> isso significa que como não foi determinado um valor para o estudo, o valor é indefinido, como uma varíavel vazia.  
 const multiplicador = 2;
 
 {

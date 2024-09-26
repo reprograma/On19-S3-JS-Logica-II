@@ -4,11 +4,11 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 0  //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
-estudo = "Olá" / 500;
+estudo = "Olá" / 500; //aqui foi feita a atribuição no escopo global --> isso acontece porque o valor determinado para estudo não foi um número (isso foi baseado em uma aula que vi no youtube kkkkkkkk, mas eu testei colocando alguns números, e todos deram "vc acertou"), não entendi muito bem o pq.
 
 if (Number.isNaN(estudo)) {
   console.log("\nVocê acertou!\n");

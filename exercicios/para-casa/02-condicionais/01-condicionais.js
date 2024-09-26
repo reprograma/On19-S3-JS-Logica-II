@@ -8,7 +8,7 @@ console.clear(); //Irá limpar o terminal para você
 const resposta = 20;
 const estudo = 10;
 
-if (estudo === resposta) { // mexa apenas aqui
+if (estudo !== resposta) { // o sinal de diferente mostra que o valor estudo é diferente do valor resposta.
   console.log("\nVocê acertou!\n");
 } else {
   console.log("\nTente de novo!\n");

@@ -15,9 +15,16 @@ readline.question('\nVamos ver se vc passou! Qual a primeira nota?\n', nota1 => 
 
     console.log(nota1, nota2);
 
-    readline.close();
-  });
+  if(nota1 >= 6) {
+    console.log("Aprovado")
+} else if (nota2 >= 5) {
+    console.log("Recuperação")
+  }  else {
+      console.log("Reprovado")
+}
+    readline.close()
 });
+})
 
 readline.on('close', () => {
   console.log('\nEstude muito sempre!');

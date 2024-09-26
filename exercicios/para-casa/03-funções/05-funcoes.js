@@ -7,10 +7,19 @@
 
 //Não se preocupe com essas três linhas, vamos aprender semana que vem.
 const myArgs = process.argv.slice(2);
-const myArgs1 = myArgs[0];
+const myArgs1 = +myArgs[0];
 
-const funcaoRecursiva = (numero1) => { // É obrigatório usar essa função com os parâmetros
-  console.log(numero1);
+function funcaoRecursiva(vezes, atual) { // É obrigatório usar essa função com os parâmetros
+  if (atual < vezes) {
+    atual++;
+    console.log(atual)
+    funcaoRecursiva(vezes, atual);
+  } else {
+    return atual;
+    }
 }
 
-funcaoRecursiva(myArgs1);
+funcaoRecursiva(myArgs1, 0);
+
+//as funções recursivas sao funções que chamam elas mesmas para fazer um loopin. ela cria pilhas de execução, ou seja, repetição.
+// é muito raro usar essa função.

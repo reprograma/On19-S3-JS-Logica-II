@@ -4,11 +4,11 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 1; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
-estudo = 1;
+estudo = 1; //aqui foi feita a atribuição no escopo global, isso acontece porque é o único momento em que o estudo é realmente definido.
 
 estudo = multiplicador * estudo;
 

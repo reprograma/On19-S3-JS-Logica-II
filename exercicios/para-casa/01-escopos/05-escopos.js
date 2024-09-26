@@ -4,7 +4,7 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
+const resposta = 3; //insira o valor da final variável 'estudo' aqui
 let estudo = 10;
 const multiplicador = 2;
 
@@ -18,7 +18,8 @@ const multiplicador = 2;
 }
 
 {
-  estudo = 3;
+  estudo = 3; //aqui foi feita a atribuição no escopo local, já que é o único que está com o escopo aberto, logo, quando a função chama a variavél, ela é a encontrada.
+
   {
     let estudo = "Olá!";
   }

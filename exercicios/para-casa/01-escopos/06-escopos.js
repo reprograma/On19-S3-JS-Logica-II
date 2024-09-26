@@ -4,8 +4,8 @@
   ex: const resposta = 5;
 */
 console.clear(); //Irá limpar o terminal para você
-const resposta = 0; //insira o valor da final variável 'estudo' aqui
-let estudo = 10;
+const resposta = 10; //insira o valor da final variável 'estudo' aqui
+let estudo = 10; //aqui foi feita a atribuição no escopo global, isso acontece porque foi a primeira variavel definida, e como as outras estão dentro de um escopo especifico, quando ocorre o chamado, é essa que é encontrada.
 const multiplicador = 2;
 
 {
