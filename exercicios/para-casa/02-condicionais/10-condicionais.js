@@ -11,13 +11,23 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('\nQuanto é o valor a ser calculado?\n', valor => {
+  
+  const number = parseInt(valor);
 
-  console.log(valor);
+  if(number >= 100 && number <= 499) {
+    const desconto10 = number - (number * 10 / 100 );
+    console.log(`\nO valor final com desconto de 10% é: R$${desconto10}`);
+  } else if (number >= 500){
+    const desconto20 = number - (number * 20/100);
+    console.log(`\nO valor final com desconto de 20% é: R$${desconto20}`);
+  } else {
+    console.log('\nInfelizmente produtos com valor inferior a R$100 não possuem desconto.')
+  }
 
   readline.close();
 });
 
 readline.on('close', () => {
-  console.log('\nObrigada comprar com a gente!');
+  console.log('\nObrigada comprar com a gente!\n');
   process.exit(0);
 });

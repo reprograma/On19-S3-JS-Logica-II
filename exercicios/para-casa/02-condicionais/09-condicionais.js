@@ -13,13 +13,21 @@ const readline = require('readline').createInterface({
 readline.question('\nVamos ver se vc passou! Qual a primeira nota?\n', nota1 => {
   readline.question('\nQual a segunda nota?\n', nota2 => {
 
-    console.log(nota1, nota2);
+    const calculo = (parseInt(nota1) + parseInt(nota2)) / 2
+
+    if(calculo >= 6){
+      console.log('\nParabéns, você foi aprovado(a)!');
+    } else if( calculo === 5){
+      console.log('\nVocê está de recuperação, é hora de estudar!')
+    } else {
+      console.log('\nInfelizmente você foi reprovado(a) :(')
+    }; 
 
     readline.close();
   });
 });
 
 readline.on('close', () => {
-  console.log('\nEstude muito sempre!');
+  console.log('\nEstude muito sempre!\n');
   process.exit(0);
 });

@@ -11,7 +11,8 @@ let valorMeiaEntrada;
 //Pessoa 1: é adulto, mas estudante, dê meia entrada
 let adulto = true;
 let estudante = true;
-const condicional = () => estudante || adulto; // <=== mexa apenas aqui
+const condicional = () => adulto === true && estudante === true; // <=== mexa apenas aqui
+
 if (condicional()) {
   valorMeiaEntrada = valorEntrada / 2;
 } else {
@@ -27,6 +28,7 @@ if (valorMeiaEntrada === 5) {
 //Pessoa 2, é adulto, mas não é estudante, negar meia entrada
 adulto = true;
 estudante = false;
+
 if (condicional()) {
   valorMeiaEntrada = valorEntrada / 2;
 } else {
@@ -34,9 +36,9 @@ if (condicional()) {
 }
 
 if (valorMeiaEntrada === 10) {
-  console.log("\n%Você acertou!\n", "color: green");
+  console.log("\nVocê acertou!\n");
 } else {
-  console.log("%cTente de novo!", "color: #000");
+  console.log("\nTente de novo!\n");
 }
 
 /*

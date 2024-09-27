@@ -10,13 +10,17 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('\nDiga o número e te direi se é impar ou par!\n', numero => {
-
-  console.log(numero);
+  formatandoNumero = parseInt(numero);
+  if (numero % 2 === 0){
+    console.log('Esse é um número par.')
+  } else {
+    console.log('Esse é um número impar.')
+  }
 
   readline.close();
 });
 
 readline.on('close', () => {
-  console.log('\nObrigada por jogar!');
+  console.log('\nObrigada por jogar!\n');
   process.exit(0);
 });

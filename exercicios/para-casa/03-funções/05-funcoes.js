@@ -7,10 +7,16 @@
 
 //Não se preocupe com essas três linhas, vamos aprender semana que vem.
 const myArgs = process.argv.slice(2);
-const myArgs1 = myArgs[0];
+const myArgs1 = parseInt(myArgs[0]);
 
 const funcaoRecursiva = (numero1) => { // É obrigatório usar essa função com os parâmetros
-  console.log(numero1);
+
+  if (numero1 === 1) {
+    return 1;
+  } else {
+    return numero1 + funcaoRecursiva(numero1 - 1);
+  }
 }
 
-funcaoRecursiva(myArgs1);
+console.log(`\nA soma dos números de 1 até ${myArgs1} é: ${funcaoRecursiva(myArgs1)}\n`);
+

@@ -10,8 +10,11 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('\nChuta um número de um a dez!\n', chute => {
-
-  console.log(chute);
+  if(chute == 7){
+  console.log('Você acertou o número 7! Muito bom!'); 
+  } else {
+    console.log('Você chutou, mas não acertou o número esperado.')
+  }
 
   readline.close();
 });

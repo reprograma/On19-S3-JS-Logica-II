@@ -7,12 +7,17 @@
 
 //Não se preocupe com essas três linhas, vamos aprender semana que vem.
 const myArgs = process.argv.slice(2);
-const myArgs1 = myArgs[0];
+const myArgs1 = parseFloat(myArgs[0]);
 
 const gerarFuncao = () => { // É obrigatório usar essa função com os parâmetros
   const PI = 3.14;
-  console.log(PI);
+
+  return(diametro) => {
+    const circunferencia = PI * diametro
+    return circunferencia
+  }
+
 }
 
 const calcularCircunferencia = gerarFuncao();
-calcularCircunferencia(myArgs1);
+console.log(`\nA circurferência do círculo com diâmetro de ${myArgs1} é: ${calcularCircunferencia(myArgs1).toFixed(2)}\n`);

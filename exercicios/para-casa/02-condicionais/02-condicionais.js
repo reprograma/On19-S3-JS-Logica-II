@@ -11,7 +11,7 @@ let adulto = false;
 let valorEntrada = 10;
 let valorMeiaEntrada;
 
-if (adulto) { // mexa apenas aqui
+if (adulto === false) { // mexa apenas aqui
   valorMeiaEntrada = valorEntrada / 2;
 }
 
